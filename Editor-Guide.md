@@ -251,7 +251,7 @@ If you open your level in the editor again, you will see that a clock icon has b
 - [Sharing Levels](https://github.com/SuperTux/supertux/wiki/Level-Editor) in SuperTux Wiki
 - [Level Format](https://github.com/SuperTux/supertux/wiki/Level-Format) in SuperTux Wiki
 - [Scripting Reference](https://github.com/SuperTux/supertux/wiki/Scripting_reference#object-reference) in SuperTux Wiki
-- [Scripting Guide by WeLuvGoatz](https://forum.freegamedev.net/viewtopic.php?f=67&t=7474&p=73491&hilit=editor#p77078)
+- [Scripting Guide by WeLuvGoatz](https://github.com/SuperTux/wiki/blob/1aabea8358ea9c89373e44af900fdac62a19fd53/scripting.md)
 - [Illustrated Tutorial how to make a tile map moveable by VNS](https://forum.freegamedev.net/viewtopic.php?f=69&t=7265&p=74044&hilit=tilemap+move#p73970)
 
 Any questions left? Go ahead and ask them in the [SuperTux forum](https://forum.freegamedev.net/viewforum.php?f=66)!
