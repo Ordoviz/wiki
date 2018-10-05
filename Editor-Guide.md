@@ -145,7 +145,7 @@ The options:
 - *circular* connects the last node with the first node. The platform goes in a circle with no ending.
 - *unordered* does what it wants. It even goes to nodes it is not directly connected with.
 
-If you disable *Running*, you have to start the movement with a script. See the end of this guide how to trigger a script.
+If you disable *Running*, you have to start the movement with a script. See the section below how to trigger a script.
 
 Let’s make a platform which starts moving when Tux jumps onto it. Place a script trigger at the top side of the platform. Give the platform a unique name for example *p1*.
 
@@ -171,16 +171,6 @@ Before lanterns and magic blocks can reasonably used, we have to darken the sect
 
 Now you can go to *Objects* > *Lightmap* and add your things. Give the magic blocks you want to be made solid by a light source the same color as your lantern or spotlight.
 
-# Making a Worldmap for your Levels
-
-In the *Choose level subset* menu, select your level set and click on *Level subset properties* > *Create worldmap*. The interface should look pretty familiar. Look at the official worldmaps to get a clue how a worldmap should look like. I will show you the basics.
-
-Build an island and draw a path on it. When you are done, go to *Objects* > *Worldmap markers* to add the level dots. Spread them all over your path. Right click on them to define the level.
-
-Make sure the spawn point is properly set. It should be on the same block as the starting igloo. Try to make your worldmap interesting. Use forks, shortcuts and most importantly group your levels like it is done with the underground levels in Icy Island. Give the worldmap a structure and do not make your level dots too near to each other.
-
-Before you can test your worldmap, you have to activate it. Go back again to *Level subset properties* and untick *Do not use worldmap*. After this you can test your worldmap from the title menu in *Start Game* > *Contrib Levels*.
-
 # Using Scripts in your Level
 
 Scripting lets you move things in your level around and change the level dynamically (It’s the JavaScript of SuperTux level editing&nbsp;– don’t overuse it!). Have a look at the [Scripting Reference](https://github.com/SuperTux/supertux/wiki/Scripting_reference#object-reference) for the commands. There are different ways to trigger a script:
@@ -191,6 +181,49 @@ Scripting lets you move things in your level around and change the level dynamic
 - Badguy > *Death script*: executed when a badguy dies, for example `sector.Tux.trigger_sequence("fireworks");` at yeti’s death.
 - *Level properties* > *On menukey script*: No idea what this is useful for.
 - Other options: button/switch press, power up picking up, Will ’O’ Wisp hit, …
+
+# Making a Worldmap for your Levels
+
+In the *Choose level subset* menu, select your level set and click on *Level subset properties* > *Create worldmap*. The interface should look pretty familiar. Look at the official worldmaps to get a clue how a worldmap should look like. I will show you the basics.
+
+Build an island and draw a path on it. When you are done, go to *Objects* > *Worldmap markers* to add the level dots. Spread them all over your path. Right click on them to define the level.
+
+Make sure the spawn point is properly set. It should be on the same block as the starting igloo. Try to make your worldmap interesting. Use forks, shortcuts and most importantly group your levels like it is done with the underground levels in Icy Island. Give the worldmap a structure and do not make your level dots too near to each other.
+
+Before you can test your worldmap, you have to activate it. Go back again to *Level subset properties* and untick *Do not use worldmap*. After this you can test your worldmap from the title menu in *Start Game* > *Contrib Levels*.
+
+# Making Intro/Outro Text for your Story
+
+By making an intro or an outro you can give the player an understanding of the story. This can be a normal level or just some scrolling text over the whole screen. I’ll show you how to do the latter.
+
+Find your levels folder:
+
+- Linux: `/home/$USERNAME/.local/share/supertux2/levels/`
+- Windows: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\levels\`
+
+Create a new text file in the same folder where the levels of your level set are stored. Call it for example *intro.txt* and paste this into it:
+
+```
+(supertux-text			
+  (background "$PATH_TO_IMAGE")
+  (music "$PATH_TO_MUSIC")
+  (text "$YOUR_TEXT")
+)
+```
+Define background and music. Try for example `"nightsky_top.png"` and `"music/voc-dark.ogg"`. The text can be formatted just like the text in info blocks.
+
+Now we have the text but we still need a way to display our text in the worldmap. For this we create a new dummy level and add a script trigger right under the spawn point. Edit the script and type `Level.finish(true);` so that the level is finished immediately. Now we can add both the text and the level to the worldmap.
+
+In the *Choose level subset* menu, select your level set and click on *Level subset properties* > *Edit Worldmap*. If you do not already have a worldmap, see the section above to make one. Add a new level dot to make your intro or outro accessible via the worldmap. Right click on it, define the level, then click on *Outro script* and type:
+
+```
+wait_for_screenswitch();
+display_text_file("levels/$LEVELSET_NAME/intro.txt");
+```
+
+The function `wait_for_screenswitch()` waits until the level is finished or the players presses <kbd>ESC</kbd>.
+
+That’s it! When you enter the level, the text is displayed.
 
 # Making an auto-scrolling Level
 
