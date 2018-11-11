@@ -33,7 +33,7 @@ Left click on *Sector: main* at the bottom left, choose *Sector Settings* and *M
 
 #### The Ambient
 
-If you go for a ghostforest-themed level or just want to make your level look more interesting, you can add a ambient in *Objects* > *Ambient*. The options you have include:
+If you go for a ghostforest-themed level or just want to make your level look more interesting, you can add an ambient in *Objects* > *Ambient*. The options you have include:
 
 ![](images/ghostparticles.png "ghost particles")
 ![](images/rain.png "rain")
@@ -56,7 +56,7 @@ Now we want to work on point number 3.
 
 #### Adding Tiles
 
-Click on Tilegroups in the top-right corner and choose a category that suits your level theme (in *Block* are tiles you need for every level). Select a tile you like by clicking on it or select multiple tiles by dragging a rectangle with your mouse. Your selection is now displayed besides the cursor. You can place it in your level as many times as you want.
+Click on *Tilegroups* in the top-right corner and choose a category that suits your level theme (in *Block* are tiles you need for every level). Select a tile you like by clicking on it or select multiple tiles by dragging a rectangle with your mouse. Your selection is now displayed besides the cursor. You can place it in your level as many times as you want.
 
 ![](images/Editor-AddingTiles.gif)
 
@@ -67,7 +67,7 @@ Click on Tilegroups in the top-right corner and choose a category that suits you
 - If you have nothing in your selection the tools work as erasers.
 - You can clear your selection with the rubber ![](images/rubber.png)or by copying an air tile.
 - Clicking the wrench ![](images/settings-mode0.png) invokes the same menu as pressing the <kbd>ESC</kbd> key.
-- This arrow ![](images/move-mode0.png) only takes affect for objects. It has no use for tiles.
+- This arrow ![](images/move-mode0.png) only takes effect for objects. It has no use for tiles.
 
 #### Adding the Goal
 
@@ -79,7 +79,7 @@ To make the goal poles, go to *Tilegroups* > *Misc*. For the first pole you have
 
 To make the igloo, go to *Tilegroups* > *Exits*. Tux’ Igloo is split up into two parts to make it look more 3D. Select the first part and paste it in tile map *&minus;100*. Then select the second part and paste it in tile map *+100*.
 
-Now we are done visually but we still have to tell the game where the level ends. Go to *Objects* > *Ambient* and select ![the Seq. Trigger icon](images/Sequencetrigger.png). We are adding a object now. Objects work a little different than tiles. See the detailed explanation below when you have problems. Click on the level window and place the sequence trigger like shown in the picture. I suggest you to press <kbd>f7</kbd> to enable “Snap objects to grid”. Make sure the first sequence trigger triggers the action “end sequence“ You can change this by right clicking on the object. The sequence trigger in the igloo is used to prevent Tux from walking farther right out of the igloo. Make sure its action is set to “stop Tux”.
+Now we are done visually, but we still have to tell the game where the level ends. Go to *Objects* > *Ambient* and select ![the Seq. Trigger icon](images/Sequencetrigger.png). We are adding an object now. Objects work a little different from tiles. See the detailed explanation below when you have problems. Click on the level window and place the sequence trigger like shown in the picture. I suggest you to press <kbd>f7</kbd> to enable “Snap objects to grid”. Make sure the first sequence trigger triggers the action “end sequence” You can change this by right clicking on the object. The sequence trigger in the igloo is used to prevent Tux from walking farther right out of the igloo. Make sure its action is set to “stop Tux”.
 
 Congratulations! You have got everything you need for your first level. Now it is time to be creative and build your level. You can come back to this guide at any time and look up your specific problems. What do you want to do next? Add particular kinds of objects, use secret areas or work with multiple tile maps? It’s your choice!
 
@@ -95,15 +95,15 @@ You cannot interact with tiles while you have object mode enabled after clicking
 - Copying can be activated with the arrow pointing to the right: ![](images/move-mode0.png) The icon will change to:![copy icon](images/move-mode1.png)Drag an existing object&nbsp;– it is getting duplicated. Copying is a child action of the adding/moving mode. You must have the adding/moving mode active to make it work. The menu structure is very confusing, I know.
 - Pro tip: To erase a whole area use the green rectangle![](images/select-mode1.png)together with erasing mode.
 - Clicking the wrench ![](images/settings-mode0.png) invokes the same menu as pressing the <kbd>ESC</kbd> key.
-- Right clicking an existing object lets you configurate its properties.
+- Right clicking an existing object lets you configure its properties.
 
-I suggest you to press <kbd>f7</kbd> to enable “Snap objects to grid”, which makes placing objects a lot easier. Of course you can disable this for more finely graduated adjusting.
+I suggest you to press <kbd>f7</kbd> to enable “Snap objects to grid”, which makes placing objects a lot easier. Of course, you can disable this for more finely graduated adjusting.
 
 ## Doors
 
 Go to *Objects* > *Interactive*. Choose the door from the list and add it. Set a spawn point (category *Ambient*) next to the door. Right click on it to give it a name, for example *spawn_door1*. You also have to right click on your door to define its destination: The “address” of the other door. For this we first need a second door. It can be in the same sector or in a different sector. To add a sector click on *Sector: main* in the bottom-left corner and *Create a new sector*. Add a door and a spawn point next to it there. Give the spawn point a name, for example *spawn_door2*.
 
-Now you can define the destinations. Our first door should go to *spawn_door2* in *sector2*. Our second door should go to *spawn_door1* in *main*. Of course we could just omit the second door and only use the bare minimum (a spawn point) but the players expects the level to let him go back again after walking through a door.
+Now you can define the destinations. Our first door should go to *spawn_door2* in *sector2*. Our second door should go to *spawn_door1* in *main*. Of course, we could just omit the second door and only use the bare minimum (a spawn point) but the players expects the level to let them go back again after walking through a door.
 
 ![](images/Editor-Doors.png)
 
@@ -111,7 +111,7 @@ Now you can define the destinations. Our first door should go to *spawn_door2* i
 
 Always mark a hidden bonus area with the dedicated object for it. Go to *Objects* > *Ambient* and click on the secret area icon.  Drag the object over your secret so the player gets the “You found a secret area!” message and the secret is count for the statistics.
 
-However, the secret area object is also able to let some tiles vanish when a players touches it. By this you can hide your secrets better in your level but do not forget to give a little visual hint.
+However, the secret area object is also able to let some tiles vanish when a player touches it. By this you can hide your secrets better in your level but do not forget to give a little visual hint.
 
 ![secret in “Welcome to Antarctica”](images/Editor-Secret.png)
 
@@ -128,13 +128,13 @@ Right click the info block to add a message. You probably noticed that the first
 - Use a hyphen-minus (-) for headlines.
 - Use an exclamation mark (!) together with the path to an image in the supertux2 folder.
 - Use a hash (#) for normal text.
-- An asterisk (*) makes the text blue and centred. Use it for quotes or extra info.
+- An asterisk (*) makes the text blue and center justified. Use it for quotes or extra info.
 - A space makes the text small. Hard to read.
 - Any other character makes the text black. Hard to read.
 
 ## Moving Platforms
 
-You can set a path where platforms, coins and even tile maps (see below) move on. To to this, add the object and click on it. An adjustment handle at the top-left corner indicates that *Following path* is activated. Platforms have this by default&nbsp;– coins and tile maps provide this as a tunable right click option.
+You can set a path where platforms, coins and even tile maps (see below) move on. To do this, add the object and click on it. An adjustment handle at the top-left corner indicates that *Following path* is activated. Platforms have this by default&nbsp;– coins and tile maps provide this as a tunable right click option.
 
 To define the path you have to go to *Objects* > *Ambient* and select the red arrow tool ![](images/path_node.png) If you click anywhere in the level with this tool active, it will draw a path between the point you clicked and the last node you clicked. So to make your platform move, click the node at the top-left corner of the object and click anywhere.
 
@@ -159,7 +159,7 @@ You can use different tile maps to organize your tiles and for using different l
 
 The most obvious use case is adding foreground and background elements. *50* is the layer where Tux jumps and all the objects are placed, so every tile on a tile map above *50* is in front of the objects and everything below is … well … behind. You can change this value with the *Z&#8209;pos* property in the right click menu of the tile map.
 
-When you edit a new level you already have three standard tile maps. Tile map *0* is solid. Use it for blocks for Tux to interact with. Tile map *&minus;100* and *+100* are not solid. Use them for background and foreground elements.
+When you edit a new level, you already have three standard tile maps. Tile map *0* is solid. Use it for blocks for Tux to interact with. Tile map *&minus;100* and *+100* are not solid. Use them for background and foreground elements.
 
 Another use case is making tiles darker or brighter. Add a new unsolid tile map and set its alpha to a value between 0 and 1 (0 is 100% transparent). Then place some black tiles in this tile map over other background blocks. You find these black tiles in *Tilegroups* > *Lightmap*. Like this you can adjust the brightness of every tile.
 
@@ -212,7 +212,7 @@ Create a new text file in the same folder where the levels of your level set are
 ```
 Define background and music. Try for example `"nightsky_top.png"` and `"music/voc-dark.ogg"`. The text can be formatted just like the text in info blocks.
 
-Now we have the text but we still need a way to display our text in the worldmap. For this we create a new dummy level and add a script trigger right under the spawn point. Edit the script and type `Level.finish(true);` so that the level is finished immediately. Now we can add both the text and the level to the worldmap.
+Now we have the text, but we still need a way to display our text in the worldmap. For this we create a new dummy level and add a script trigger right under the spawn point. Edit the script and type `Level.finish(true);` so that the level is finished immediately. Now we can add both the text and the level to the worldmap.
 
 In the *Choose level subset* menu, select your level set and click on *Level subset properties* > *Edit Worldmap*. If you do not already have a worldmap, see the section above to make one. Add a new level dot to make your intro or outro accessible via the worldmap. Right click on it, define the level, then click on *Outro script* and type:
 
@@ -227,7 +227,7 @@ That’s it! When you enter the level, the text is displayed.
 
 # Making an auto-scrolling Level
 
-Modifying the camera is currently not supported by the level editor. Though, you can edit your level in a text editor. Save your level and close SuperTux. Find your level file:
+Modifying the camera is currently not supported by the level editor. However, you can edit your level in a text editor. Save your level and close SuperTux. Find your level file:
 
 - Linux: `/home/$USERNAME/.local/share/supertux2/levels/`
 - Windows: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\levels\`
@@ -259,7 +259,7 @@ You can adjust the time (less is faster) or adjust the y&#8209;values to move th
 
 # Setting a Time Limit for a Sector
 
-Setting a time limit is currently not included in the level editor. Though, you can edit your level in a text editor. Save your level and close SuperTux. Find your level file:
+Setting a time limit is currently not included in the level editor. However, you can edit your level in a text editor. Save your level and close SuperTux. Find your level file:
 
 - Linux: `/home/$USERNAME/.local/share/supertux2/levels/`
 - Windows: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\levels\`
@@ -272,7 +272,7 @@ Open it with a text editor and add these lines as a property to a sector:
 )
 ```
 
-You can place it between `(gravity)` and `(background)`&nbsp;– it does not really matter, as long as you does not break something. Save the file.
+You can place it between `(gravity)` and `(background)`&nbsp;– it does not really matter, as long as you do not break something. Save the file.
 
 If you open your level in the editor again, you will see that a clock icon has been added to the bottom bar. Now you can change the time graphically if you want.
 
@@ -285,7 +285,7 @@ If you open your level in the editor again, you will see that a clock icon has b
 - [Level Format](https://github.com/SuperTux/supertux/wiki/Level-Format) in SuperTux Wiki
 - [Scripting Reference](https://github.com/SuperTux/supertux/wiki/Scripting_reference#object-reference) in SuperTux Wiki
 - [Scripting Guide by WeLuvGoatz](https://github.com/SuperTux/wiki/blob/1aabea8358ea9c89373e44af900fdac62a19fd53/scripting.md)
-- [Illustrated Tutorial how to make a tile map moveable by VNS](https://forum.freegamedev.net/viewtopic.php?f=69&t=7265&p=74044&hilit=tilemap+move#p73970)
+- [Illustrated Tutorial how to make a tile map movable by VNS](https://forum.freegamedev.net/viewtopic.php?f=69&t=7265&p=74044&hilit=tilemap+move#p73970)
 
 Any questions left? Go ahead and ask them in the [SuperTux forum](https://forum.freegamedev.net/viewforum.php?f=66)!
 
