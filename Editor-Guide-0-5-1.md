@@ -1,3 +1,5 @@
+*This guide is meant for SuperTux v0.5.1. For newer versions: [0.6.0](https://github.com/Ordoviz/wiki/blob/master/Editor-Guide-0-6-0.md)*
+
 # Your first Level
 
 Click on *Level Editor* from the title menu. Then *New level subset*. Give it a name and click *OK*. To make your first level click on *New level* and for the sake of free software we will release our level under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
