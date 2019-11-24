@@ -11,7 +11,7 @@ level* and for the sake of free software we will release our level under
 ## The Interface
 
 The panel on the right side is the place where you get all of your blocks
-(*Tilegroups*) and enemies (*Objects*) into your level. With the bottom
+*(Tilegroups)* and enemies *(Objects)* into your level. With the bottom
 panel you can easily switch between the tile maps (let *0* enabled for
 now&nbsp;– we will cover that later) and change background, music and the
 size of your sector.
@@ -153,7 +153,7 @@ objects to grid“.
 
 Now we are done visually, but we still have to tell the game where the
 level ends. Go to *Objects* → *Ambient* and select ![the Seq. Trigger
-icon](images/Sequencetrigger.png). Click on the level window and place
+icon.](images/Sequencetrigger.png) Click on the level window and place
 the sequence trigger like shown in the picture. Make sure the first
 sequence trigger triggers the action “end sequence” You can change this
 by right clicking on the object. The sequence trigger in the igloo is used
@@ -201,7 +201,7 @@ for more finely graduated adjusting.
 ## Doors
 
 Go to *Objects* → *Interactive*. Choose the door from the list and add
-it. Set a spawn point (category *Ambient*) next to the door. Right click
+it. Set a spawn point *(Objects → Ambient)* next to the door. Right click
 on it to give it a name, for example *spawn_door1*. You also have to right
 click on your door to define its destination: The “address” of the
 other door. For this we first need a second door. It can be in the same
@@ -225,7 +225,7 @@ over your secret so the player gets the “You found a secret area!”
 message and the secret is counted for the statistics.
 
 However, the secret area object is also able to let some tiles vanish when
-a player touches it. By this you can hide your secrets better in your level
+a player touches it. That way you can hide your secrets better in your level
 but do not forget to give a little visual hint.
 
 ![secret in “Welcome to Antarctica”](images/Editor-Secret.png)
@@ -306,7 +306,7 @@ multiple layers possible. You can add a tile map in *Objects* → *Ambient*
 and switch between them in the bottom bar.
 
 The most obvious use case is adding foreground and background elements. *50*
-is the layer where Tux jumps and all the objects are placed, so every tile
+is the layer where Tux jumps and all the objects are placed so every tile
 on a tile map above *50* is in front of the objects and everything below
 is … well … behind. You can change this value with the *Z&#8209;pos*
 property in the right click menu of the tile map.
@@ -362,7 +362,7 @@ subset properties* → *Create worldmap*. The interface should look pretty
 familiar. Look at the official worldmaps to get a clue how a worldmap should
 look like. I will show you the basics.
 
-Build an island and draw a path on it. When you are done, go to *Objects* >
+Build an island and draw a path on it. When you are done, go to *Objects* →
 *Worldmap markers* to add the level dots. Spread them all over your
 path. Right click them to define the level.
 
@@ -373,7 +373,7 @@ underground levels in Icy Island. Give the worldmap a structure and don’t
 make your level dots too near to each other.
 
 Before you can test your worldmap, you have to activate it. Go back again
-to *Level subset properties* and change *Type* to *Worldmap*. After this you
+to *Level subset properties* and change *Type* to “Worldmap”. After this you
 can test your worldmap from the title menu in *Start Game* → *Contrib Levels*.
 
 # Making Intro/Outro Text for your Story
@@ -388,7 +388,7 @@ Find your levels folder:
 - Windows: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\levels\`
 
 Create a new text file in the same folder where the levels of your level
-set are stored. Call it for example *intro.txt* and paste this into it:
+set are stored. Call it for example `intro.txt` and paste this into it:
 
 ```
 (supertux-text
@@ -419,7 +419,7 @@ wait_for_screenswitch();
 display_text_file("levels/$LEVELSET_NAME/intro.txt");
 ```
 
-The function `wait_for_screenswitch()` waits until the level is finished or
+The function `wait_for_screenswitch` waits until the level is finished or
 the players presses <kbd>ESC</kbd>.
 
 That’s it! When you enter the level, the text is displayed.
