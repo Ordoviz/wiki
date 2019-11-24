@@ -68,11 +68,11 @@ If you go for a ghostforest-themed level or just want to make your level
 look more interesting, you can add an ambient in *Objects* > *Ambient*. The
 options you have include:
 
-![](images/ghostparticles.png "ghost particles")
-![](images/rain.png "rain")
-![](images/thunderstorm.png "thunderstorm")
-![](images/snow.png "snow")
-![](images/clouds.png "clouds")
+![ghostparticles](images/ghostparticles.png "ghost particles")
+![rain](images/rain.png "rain")
+![thunderstorm](images/thunderstorm.png "thunderstorm")
+![snow](images/snow.png "snow")
+![clouds](images/clouds.png "clouds")
 
 Click on one of these icons in the editor, then click on the level window. The
 ambient will be added to the bottom panel and is activated instantly.
@@ -98,25 +98,26 @@ a tile you like by clicking on it or select multiple tiles by dragging
 a rectangle with your mouse. Your selection is now displayed besides the
 cursor. You can place it in your level as many times as you want.
 
-![](images/Editor-AddingTiles.gif)
+![Animated gif showing how to make a platform out of snow
+tiles](images/Editor-AddingTiles.gif)
 
 - By right clicking on a tile you can copy it. It is also possible to copy
   a whole area by dragging a rectangle with your mouse.
-- The red rectangle![](images/select-mode0.png)is the normal insert tool. By
+- ![The red rectangle ](images/select-mode0.png)is the normal insert tool. By
   clicking this icon you can switch tools.
-- With the green rectangle![](images/select-mode1.png)you can fill rectangular
+- ![The green rectangle ](images/select-mode1.png)lets you fill rectangular
   areas.
-- The bucket fill tool ![](images/select-mode2.png)fills an area of adjacent
+- ![The bucket fill tool ](images/select-mode2.png)fills an area of adjacent
   tiles of the samy type.
 - If something goes wrong you can undo/redo using the arrows on the left:
   ![](images/undo.png)![](images/redo.png)
 - If you have nothing in your selection the tools work as erasers.
-- You can clear your selection with the rubber ![](images/rubber.png)or by
+- You can clear your selection with ![the rubber ](images/rubber.png)or by
   copying an air tile.
-- Clicking the wrench ![](images/settings-mode0.png) invokes the same menu
-  as pressing the <kbd>ESC</kbd> key.
-- This arrow ![](images/move-mode0.png) only takes effect for objects. It
-  has no use for tiles.
+- Clicking ![the wrench](images/settings-mode0.png) invokes the same menu
+  as pressing <kbd>ESC</kbd>.
+- ![The right-pointing arrow](images/move-mode0.png) only takes effect for
+  objects. It has no use for tiles.
 
 #### Adding the Goal
 
@@ -176,21 +177,21 @@ you might have noticed that a new option has appeared in the right panel. I
 will explain everything:
 
 - There are two basic modes: adding/moving and erasing.
-- Adding/moving can be activated with the cursor-looking
-  arrow:![](images/arrow.png)Click to add an object and drag to move an
+- Adding/moving can be activated with ![the cursor-looking arrow. ](
+  images/arrow.png)Click to add an object and drag to move an
   existing object around.
-- Erasing can be activated with the rubber: ![](images/rubber.png) Click on
+- Erasing can be activated with ![the rubber.](images/rubber.png) Click on
   an existing object to remove it.
-- Copying can be activated with the arrow pointing to the
-  right: ![](images/move-mode0.png) The icon will change to:![copy
-  icon](images/move-mode1.png)Drag an existing object&nbsp;– it is getting
+- Copying can be activated with ![the arrow pointing to the right.](
+  images/move-mode0.png) The icon will change to![ the copy
+  icon. ](images/move-mode1.png)Drag an existing object&nbsp;– it will be
   duplicated. Copying is a child action of the adding/moving mode. You must
   have the adding/moving mode active to make it work. The menu structure is
   very confusing, I know.
-- Pro tip: To erase a whole area use the green
-  rectangle![](images/select-mode1.png)together with erasing mode.
-- Clicking the wrench ![](images/settings-mode0.png) invokes the same menu
-  as pressing the <kbd>ESC</kbd> key.
+- Pro tip: To erase a whole area use ![the green rectangle ](
+  images/select-mode1.png)together with erasing mode.
+- Clicking ![the wrench](images/settings-mode0.png) invokes the same menu
+  as pressing <kbd>ESC</kbd>.
 - Right clicking an existing object lets you configure its properties.
 
 I suggest you to press <kbd>f7</kbd> to enable “Snap objects to grid”,
@@ -330,7 +331,7 @@ which uses this mechanic.
 # Working with Lightmaps
 
 Before lanterns and magic blocks can reasonably used, we have to darken the
-sector first. Click on the light bulb ![](images/ambient_light.png) in the
+sector first. Click on ![the light bulb](images/ambient_light.png) in the
 bottom bar and define the color using RGBA. Give each value a number between 0
 and 1. I don’t think that you ever need to change the alpha value, leave it 1.
 
@@ -457,7 +458,8 @@ You can adjust the time (less is faster) or adjust the y&#8209;values to
 move the camera up or down (bigger is down). Right now the camera is at the
 top because SuperTux levels follow this coordinate system:
 
-<img src="images/Editor-coordinate-system.svg" alt="" height="120">
+<img src="images/Editor-coordinate-system.svg" alt="coordinate system with the
+origin at the top left" height="120">
 
 # Setting a Time Limit for a Sector
 
