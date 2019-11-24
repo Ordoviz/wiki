@@ -65,7 +65,7 @@ Then you can define top, middle and bottom in the editor.
 #### The Ambient
 
 If you go for a ghostforest-themed level or just want to make your level
-look more interesting, you can add an ambient in *Objects* > *Ambient*. The
+look more interesting, you can add an ambient in *Objects* → *Ambient*. The
 options you have include:
 
 ![ghostparticles](images/ghostparticles.png "ghost particles")
@@ -125,13 +125,13 @@ A SuperTux level usually ends like this:
 
 ![goal with igloo](images/Editor-Goal.png)
 
-To make the goal poles go to *Tilegroups* > *Misc*. For the first pole you
+To make the goal poles go to *Tilegroups* → *Misc*. For the first pole you
 have to switch to tile map *&minus;100*. Then you can draw the pole. For
 the second pole you have to switch to tile map *+100*. Then you can draw the
 pole. This way we have one pole in the background and the other one in the
 foreground which creates this cool 3D effect.
 
-To make the igloo go to *Objects* > *Interactive* and select ![the Decal
+To make the igloo go to *Objects* → *Interactive* and select ![the Decal
 icon.](images/decal.png) We are adding an object now. Objects work a little
 different than tiles. See the detailed explanation below when you have
 problems. Click on the level window to place the decal. You will notice
@@ -152,7 +152,7 @@ shape. That’s much easier when you press <kbd>f7</kbd> to activate “Snap
 objects to grid“.
 
 Now we are done visually, but we still have to tell the game where the
-level ends. Go to *Objects* > *Ambient* and select ![the Seq. Trigger
+level ends. Go to *Objects* → *Ambient* and select ![the Seq. Trigger
 icon](images/Sequencetrigger.png). Click on the level window and place
 the sequence trigger like shown in the picture. Make sure the first
 sequence trigger triggers the action “end sequence” You can change this
@@ -200,7 +200,7 @@ for more finely graduated adjusting.
 
 ## Doors
 
-Go to *Objects* > *Interactive*. Choose the door from the list and add
+Go to *Objects* → *Interactive*. Choose the door from the list and add
 it. Set a spawn point (category *Ambient*) next to the door. Right click
 on it to give it a name, for example *spawn_door1*. You also have to right
 click on your door to define its destination: The “address” of the
@@ -220,7 +220,7 @@ after walking through a door.
 ## ![](images/secretarea.png) Secret Areas 
 
 Always mark a hidden bonus area with the dedicated object for it. Go to
-*Objects* > *Ambient* and click on the secret area icon. Drag the object
+*Objects* → *Ambient* and click on the secret area icon. Drag the object
 over your secret so the player gets the “You found a secret area!”
 message and the secret is counted for the statistics.
 
@@ -247,7 +247,7 @@ which is already translated into many langauges, is used.
 
 ## ![](images/Infoblock.png) Info Blocks
 
-Go to *Objects* > *Interactive* and add the info block like any other
+Go to *Objects* → *Interactive* and add the info block like any other
 object. Use the info block only if something does not become clear from the
 level itself or you want to introduce new game mechanics.
 
@@ -272,7 +272,7 @@ the top-left corner indicates that *Following path* is activated. Platforms
 have this by default&nbsp;– coins and tile maps provide this as a tunable
 right click option.
 
-To define the path you have to go to *Objects* > *Ambient* and select ![the
+To define the path you have to go to *Objects* → *Ambient* and select ![the
 red arrow tool.](images/path_node.png) If you click anywhere in the level
 having activated this tool, it will draw a path between the point you clicked
 and the last node you selected. So to make your platform move, click the node
@@ -302,7 +302,7 @@ name for example *p1*.
 # ![](images/Tilemap.png) Working with multiple Tile Maps
 
 You can use different tile maps to organize your tiles and to make using
-multiple layers possible. You can add a tile map in *Objects* > *Ambient*
+multiple layers possible. You can add a tile map in *Objects* → *Ambient*
 and switch between them in the bottom bar.
 
 The most obvious use case is adding foreground and background elements. *50*
@@ -318,7 +318,7 @@ and *+100* are not solid. Use them for background and foreground elements.
 Another use case is making tiles darker or brighter. Add a new unsolid tile
 map and set its alpha to a value between 0 and 1 (0 is 100% transparent). Then
 place some black tiles in this tile map over other background blocks. You can
-find these black tiles in *Tilegroups* > *Lightmap*. This way you can adjust
+find these black tiles in *Tilegroups* → *Lightmap*. This way you can adjust
 the brightness of every tile.
 
 When you decrease the size of a tile map and enable the *Following path*
@@ -335,7 +335,7 @@ sector first. Click on ![the light bulb](images/ambient_light.png) in the
 bottom bar and define the color using RGBA. Give each value a number between 0
 and 1. I don’t think that you ever need to change the alpha value, leave it 1.
 
-Now you can go to *Objects* > *Lightmap* and add your things. Give the magic
+Now you can go to *Objects* → *Lightmap* and add your things. Give the magic
 blocks you want to be made solid by a light source the same color as your
 lantern or spotlight.
 
@@ -349,16 +349,16 @@ for the commands. There are different ways to trigger a script:
 
 - ![](images/Scripttrigger.png) A Script trigger object: When Tux enters
   this area a script gets executed.
-- *Sector settings* > *Initialization script*: executed at the start of
+- *Sector settings* → *Initialization script*: executed at the start of
   the level.
-- Badguy > *Death script*: executed when a badguy dies, for example
+- Badguy → *Death script*: executed when a badguy dies, for example
   `sector.Tux.trigger_sequence("fireworks");` at yeti’s death.
 - Other options: button/switch press, power up picking up, Will ’O’ Wisp hit, …
 
 # Making a Worldmap for your Levels
 
 In the *Choose level subset* menu, select your level set and click on *Level
-subset properties* > *Create worldmap*. The interface should look pretty
+subset properties* → *Create worldmap*. The interface should look pretty
 familiar. Look at the official worldmaps to get a clue how a worldmap should
 look like. I will show you the basics.
 
@@ -374,7 +374,7 @@ make your level dots too near to each other.
 
 Before you can test your worldmap, you have to activate it. Go back again
 to *Level subset properties* and change *Type* to *Worldmap*. After this you
-can test your worldmap from the title menu in *Start Game* > *Contrib Levels*.
+can test your worldmap from the title menu in *Start Game* → *Contrib Levels*.
 
 # Making Intro/Outro Text for your Story
 
@@ -409,7 +409,7 @@ so that the level is finished immediately. Now we can add both the text and
 the level to the worldmap:
 
 In the *Choose level subset* menu, select your level set and click on *Level
-subset properties* > *Edit Worldmap*. If you haven’t done a worldmap already,
+subset properties* → *Edit Worldmap*. If you haven’t done a worldmap already,
 see the section above to make one. Add a new level dot to make your intro
 or outro accessible via the worldmap. Right click on it, define the level,
 then click on *Outro script* and type:
@@ -463,7 +463,7 @@ origin at the top left" height="120">
 
 # Setting a Time Limit for a Sector
 
-Navigate to *Objects* > *Ambient*, select ![the clock icon](images/clock.png)
+Navigate to *Objects* → *Ambient*, select ![the clock icon](images/clock.png)
 and add it. The clock icon now appears in the bottom bar. Right click it
 and enter the desired time.
 
