@@ -1,5 +1,5 @@
-*This guide is meant for SuperTux v0.6.0. For older versions:
-[0.5.1](https://github.com/Ordoviz/wiki/blob/master/Editor-Guide-0-5-1.md)*
+*This guide is meant for SuperTux v0.6.1. Previous version:
+[0.6.0](Editor-Guide-0-6-0.md)*
 
 # Your first Level
 
