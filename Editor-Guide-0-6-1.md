@@ -197,7 +197,8 @@ will explain everything:
   src="images/arrow.png" height="20"/> Click to add an object and drag to move
   an existing object around.
 - Erasing can be activated with <img alt="the rubber." src="images/rubber.png"
-  height="20"/> Click on an existing object to remove it.
+  height="20"/> Click on an existing object to remove it. For some reason
+  erasing does not work when copying is active.
 - Copying is a child mode of the adding/moving mode. You must have the
   adding/moving mode active to make it work. Copying can be activated by
   clicking on <img alt="the single file." src="images/move-mode0.png"
