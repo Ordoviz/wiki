@@ -498,21 +498,27 @@ Navigate to *Objects* → *Sector*, select ![the clock icon](images/clock.png)
 and add it. The clock icon now appears in the bottom bar. Right click it
 and enter the desired time.
 
-# Tips and additional Resources
+# Tips and Tricks
 
 You can learn a lot by looking at other people’s levels in the editor. Copy
-`world1/info` and `world2/info` from the data directory to
-`world1/info` and `world2/info` in your user directory. Set
-*hide-from-contribs* in the world’s `info` file to `#f` to unhide it
-from the editor. The directories are located at the following places:
+`levels/world1/info` and `levels/world2/info` from the data directory to
+`levels/world1/info` and `levels/world2/info` (respectively) in your user
+directory. Set *hide-from-contribs* in the world’s `info` file to `#f` to
+unhide it from the editor. The directories are located at the following places:
 
 - Linux: 
-  - data dir: `/usr/share/games/supertux2/levels/`
-  - user dir: `~/.local/share/supertux2/levels/`
+  - data dir: `/usr/share/games/supertux2/`
+  - user dir: `~/.local/share/supertux2/`
 
 - Windows: 
-  - data dir: `C:\Program Files\SuperTux\data\levels\`
-  - user dir: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\levels\`
+  - data dir: `C:\Program Files\SuperTux\data\`
+  - user dir: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\`
+
+Enable developer mode to get access to the cheat menu with <kbd>F1</kbd>:
+Change `(developer #f)` to `(developer #t)` in the `config` file of your
+user directory.
+
+# See also
 
 - [Leveldesign guidelines](https://github.com/SuperTux/supertux/wiki/Leveldesign)
   in SuperTux Wiki
