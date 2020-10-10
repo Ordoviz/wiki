@@ -530,7 +530,7 @@ user directory.
   in SuperTux Wiki
 - [Scripting Guide by WeLuvGoatz](https://github.com/SuperTux/wiki/blob/1aabea8358ea9c89373e44af900fdac62a19fd53/scripting.md)
 - [Illustrated Tutorial how to make a tile map movable by VNS](
-  https://forum.freegamedev.net/viewtopic.php?f=69&t=7265&p=74044&hilit=tilemap+move#p73970)
+  https://forum.freegamedev.net/viewtopic.php?f=69&t=7265#p73970)
 
 Any questions left? Go ahead and ask them in the [SuperTux forum](
 https://forum.freegamedev.net/viewforum.php?f=66)!
