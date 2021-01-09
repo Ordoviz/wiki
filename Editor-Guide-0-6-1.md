@@ -513,6 +513,9 @@ unhide it from the editor. The directories are located at the following places:
 - Windows: 
   - data dir: `C:\Program Files\SuperTux\data\`
   - user dir: `C:\Users\$USERNAME\AppData\Roaming\SuperTux\supertux2\`
+  
+- macOS:
+  - user dir: `~/Library/Application Support/supertux2/`
 
 Enable developer mode to get access to the cheat menu with <kbd>F1</kbd>:
 Change `(developer #f)` to `(developer #t)` in the `config` file of your
